@@ -1,4 +1,4 @@
-Microservidor_WEB_MP: API para Plataforma de Cursos Online
+# Microservidor_WEB_MP: API para Plataforma de Cursos Online
 
 1. Descripción del Proyecto
 
@@ -12,7 +12,7 @@ Paso 1: Añadir Nuevas Dependencias (Opcional)
 
 Si necesitas añadir nuevas librerías de Python (como django-allauth, PyJWT, requests), debes agregarlas al final del archivo requirements.txt que se encuentra en la carpeta del backend.
 
-# /backend/requirements.txt
+### /backend/requirements.txt
 
 Django==...
 # ... otras dependencias
@@ -34,10 +34,10 @@ Paso 3: Ejecutar las Migraciones de la Base de Datos
 
 Una vez que los contenedores estén corriendo, ejecuta los siguientes comandos para preparar la base de datos.
 
-# Crea los nuevos archivos de migración si has modificado los modelos
+### Crea los nuevos archivos de migración si has modificado los modelos
 docker-compose exec backend python manage.py makemigrations
 
-# Aplica las migraciones para crear las tablas en la base de datos
+### Aplica las migraciones para crear las tablas en la base de datos
 docker-compose exec backend python manage.py migrate
 
 
